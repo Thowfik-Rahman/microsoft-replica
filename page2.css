@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1b1e;
+    color: white;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+}
+
+.navbar {
+    background-color: #151517 !important;
+}
+
+.navbar .logo {
+    color: white;
+    font-family: monospace;
+    white-space: nowrap;
+}
+
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+    color: white !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-toggle:hover {
+    color: #ddd !important;
+}
+
+.navbar-toggler {
+    border-color: #777;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.dropdown-menu {
+    background-color: white;
+    border: none;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #000;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f2f2f2;
+}
+
+.allitems {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+}
+
+.allitems h6 {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.allitems a {
+    display: block;
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.allitems a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.search-button:hover {
+    background-color: #333;
+}
+
+.search-box {
+    display: none;
+    align-items: center;
+    height: 40px;
+    width: 300px;
+    max-width: 90vw;
+    background-color: white;
+    border: 1px solid #777;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: black;
+}
+
+.search-box button {
+    height: 100%;
+    width: 40px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.signin {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    white-space: nowrap;
+}
+
+.circle {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px 7px;
+}
+
+.blur {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.blur::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("./Images/xbox1.png");
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    transform: scale(1.1);
+}
+
+.blurcard {
+    position: relative;
+    z-index: 1;
+}
+
+.xbox img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blurcard h6 {
+    color: #ddd;
+}
+
+.ablur {
+    background-color: #151517;
+    color: white;
+}
+
+.details {
+    color: white;
+}
+
+.card {
+    background-color: #2f3032;
+    color: white;
+    border: none;
+}
+
+.cardimg img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cardmsg p {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.planbox {
+    background-color: #404040;
+    color: white;
+    height: 100%;
+}
+
+.planpaybox {
+    background-color: #484e58;
+}
+
+.plans {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.plans button {
+    margin-top: auto;
+}
+
+.desc {
+    background-color: #151517;
+    color: white;
+}
+
+.d1 p {
+    line-height: 1.7;
+    color: #ddd;
+}
+
+.info {
+    background-color: #151517;
+    color: white;
+}
+
+.info p {
+    color: #ddd;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+}
+
+.footer h6 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    display: block;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
